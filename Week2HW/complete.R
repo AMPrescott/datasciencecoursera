@@ -18,7 +18,7 @@ complete <- function(directory, id = 1:332) {
     }
   #Initialize a data frame with fileID and counts of complete observations
   #Begin with observations numbers equal to 1
-  completeObs <-  data.frame(ID = id, numCompObs = rep(0,length(id)))
+  completeObs <-  data.frame(id = id, nobs = rep(0,length(id)))
   
   #Open file into data table and check for number of complete observations
   for(site in seq_len(length(id))){
